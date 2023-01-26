@@ -8,7 +8,6 @@ import 'dart:html';
 
 void main() {
   runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
     home: students(),
   ));
 }
