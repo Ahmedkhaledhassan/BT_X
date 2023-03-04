@@ -1,5 +1,5 @@
-import 'package:bt_x/MyTextField.dart';
-import 'package:bt_x/register.dart';
+import 'package:bt_x/Login&register/MyTextField.dart';
+import 'package:bt_x/Login&register/register_class.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/link.dart';
@@ -7,7 +7,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 import 'dart:html';
 
-class LoginPage extends StatelessWidget {
+class LoginPage_class extends StatelessWidget {
   TextEditingController emailcontroller = new TextEditingController();
 
   TextEditingController passwordController = new TextEditingController();
@@ -16,10 +16,22 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: Stack(fit: StackFit.passthrough, children: [
+        new Container(
+          height: 25,
+          color: Color(0xFF3E6BA9),
+          child: Center(
+              child: Text(
+                  "جميع الحقوق محفوظة © طلاب جامعة بني سويف التكنولوجية",
+                  style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white))),
+        )
+      ]),
       body: Container(
         child: Center(
           child: SingleChildScrollView(
-            padding: const EdgeInsets.all(15),
             child: Column(
               children: [
                 Image.asset(
@@ -27,20 +39,26 @@ class LoginPage extends StatelessWidget {
                   height: 240,
                   width: 350,
                 ),
-                MyTextField(
-                  icon: Icon(Icons.email),
-                  hint: "Enter your E-mail",
-                  inputType: TextInputType.emailAddress,
-                  isPassword: false,
+                Container(
+                  width: 480,
+                  child: MyTextField(
+                    icon: Icon(Icons.email),
+                    hint: "البريد الالكتروني",
+                    inputType: TextInputType.emailAddress,
+                    isPassword: false,
+                  ),
                 ),
                 SizedBox(
                   height: 10,
                 ),
-                MyTextField(
-                  hint: "Enter your Password",
-                  inputType: TextInputType.text,
-                  isPassword: true,
-                  icon: Icon(Icons.password),
+                Container(
+                  width: 480,
+                  child: MyTextField(
+                    hint: "كلمة المرور",
+                    inputType: TextInputType.text,
+                    isPassword: true,
+                    icon: Icon(Icons.password),
+                  ),
                 ),
                 SizedBox(
                   height: 10,
@@ -48,16 +66,16 @@ class LoginPage extends StatelessWidget {
                 ElevatedButton(
                   onPressed: () {},
                   child: Text(
-                    "Login",
-                    style: TextStyle(fontSize: 20),
+                    "تسجيل الدخول",
+                    style: TextStyle(fontSize: 18),
                   ),
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(
-                      Color.fromARGB(255, 20, 30, 165),
+                      Color(0xFF3E6BA9),
                     ),
                     padding: MaterialStateProperty.all(
                       EdgeInsets.only(
-                          left: 150, right: 150, top: 15, bottom: 15),
+                          left: 100, right: 100, top: 15, bottom: 15),
                     ),
                   ),
                 ),
@@ -67,8 +85,7 @@ class LoginPage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("Don't have an account yet ?",
-                        style: TextStyle(fontSize: 18)),
+                    Text("ليس لديك حساب ؟", style: TextStyle(fontSize: 18)),
                     //TextButton.icon(
                     //onPressed: (){},
                     //icon: Icon(Icons.person, color: Colors.black,size: 24.0,),
@@ -78,10 +95,10 @@ class LoginPage extends StatelessWidget {
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const register()),
+                              builder: (context) => const register_class()),
                         );
                       },
-                      child: Text('Sign Up',
+                      child: Text("سجل من هنا",
                           style: TextStyle(
                               color: Color.fromARGB(255, 3, 3, 0),
                               fontSize: 17)),
@@ -94,35 +111,19 @@ class LoginPage extends StatelessWidget {
                 ElevatedButton(
                   onPressed: () {},
                   child: Text(
-                    'Forum',
+                    "المنتدي",
                     style: TextStyle(fontSize: 20),
                   ),
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(
-                      Color.fromARGB(255, 239, 255, 14),
+                      Color(0xFF3E6BA9),
                     ),
                     padding: MaterialStateProperty.all(
                       EdgeInsets.only(
-                          left: 150, right: 150, top: 15, bottom: 15),
+                          left: 125, right: 125, top: 15, bottom: 15),
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 100,
-                ),
-                Row(
-                  children: [
-                    Text("all Rights Reserved©",
-                        style: TextStyle(fontSize: 18)),
-                    TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        "BST",
-                        style: TextStyle(color: Colors.red),
-                      ),
-                    )
-                  ],
-                )
               ],
             ),
           ),
