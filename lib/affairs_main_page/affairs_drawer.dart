@@ -2,7 +2,7 @@
 
 import 'dart:ui';
 
-import 'package:bt_x/affairs_main_page/affairs_side_menue.dart';
+import 'package:bt_x/affairs_main_page/side_menue.dart';
 import 'package:easy_sidemenu/easy_sidemenu.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';

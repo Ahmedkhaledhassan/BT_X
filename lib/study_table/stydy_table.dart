@@ -3,7 +3,7 @@
 import 'dart:ui';
 
 import 'package:bt_x/Study_result_page/study_result_class.dart';
-import 'package:bt_x/affairs_main_page/affairs_side_menue.dart';
+import 'package:bt_x/affairs_main_page/side_menue.dart';
 import 'package:bt_x/responsive_page/responsive.dart';
 import 'package:bt_x/study_table/study_table_class.dart';
 import 'package:easy_sidemenu/easy_sidemenu.dart';
@@ -36,6 +36,19 @@ class Study_table extends StatelessWidget {
           ],
           debugShowCheckedModeBanner: false,
           home: Scaffold(
+            bottomNavigationBar: Stack(fit: StackFit.passthrough, children: [
+              new Container(
+                height: 25,
+                color: Color(0xFF3E6BA9),
+                child: Center(
+                    child: Text(
+                        "جميع الحقوق محفوظة © طلاب جامعة بني سويف التكنولوجية",
+                        style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white))),
+              )
+            ]),
             body: study_table_class(),
             appBar: AppBar(
               backgroundColor: Color(0xFF3E6BA9), // Will work
@@ -71,6 +84,19 @@ class Study_table extends StatelessWidget {
           ],
           debugShowCheckedModeBanner: false,
           home: Scaffold(
+            bottomNavigationBar: Stack(fit: StackFit.passthrough, children: [
+              new Container(
+                height: 25,
+                color: Color(0xFF3E6BA9),
+                child: Center(
+                    child: Text(
+                        "جميع الحقوق محفوظة © طلاب جامعة بني سويف التكنولوجية",
+                        style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white))),
+              )
+            ]),
             body: Row(
               children: [
                 Flexible(
@@ -114,6 +140,19 @@ class Study_table extends StatelessWidget {
           ],
           debugShowCheckedModeBanner: false,
           home: Scaffold(
+            bottomNavigationBar: Stack(fit: StackFit.passthrough, children: [
+              new Container(
+                height: 25,
+                color: Color(0xFF3E6BA9),
+                child: Center(
+                    child: Text(
+                        "جميع الحقوق محفوظة © طلاب جامعة بني سويف التكنولوجية",
+                        style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white))),
+              )
+            ]),
             body: Row(
               children: [
                 Flexible(
@@ -127,7 +166,7 @@ class Study_table extends StatelessWidget {
                   child: Container(
                     child: study_table_class(),
                   ),
-                )
+                ),
               ],
             ),
             appBar: AppBar(

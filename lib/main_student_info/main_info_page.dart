@@ -2,8 +2,13 @@
 
 import 'dart:ui';
 
+import 'package:bt_x/Documents_Request/Documents_request_class.dart';
+import 'package:bt_x/Exams_table/Exams_table_class.dart';
 import 'package:bt_x/Study_result_page/study_result_class.dart';
+
 import 'package:bt_x/affairs_main_page/side_menue.dart';
+import 'package:bt_x/fees_page/fees_class.dart';
+import 'package:bt_x/inquiries_page/inguiries_page_calss.dart';
 import 'package:bt_x/responsive_page/responsive.dart';
 import 'package:easy_sidemenu/easy_sidemenu.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +17,7 @@ import 'dart:html';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-class Study_Result extends StatelessWidget {
+class main_student_info extends StatelessWidget {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   PageController page = PageController();
   late final String title;
@@ -23,7 +28,7 @@ class Study_Result extends StatelessWidget {
     return Scaffold(
       body: Responsive(
         mobile: MaterialApp(
-          title: 'Study Result',
+          title: 'Inquiries',
           localizationsDelegates: [
             GlobalMaterialLocalizations.delegate,
             GlobalWidgetsLocalizations.delegate,
@@ -48,7 +53,7 @@ class Study_Result extends StatelessWidget {
                             color: Colors.white))),
               )
             ]),
-            body: study_result_class(),
+            body: Inquiries_page_Class(),
             appBar: AppBar(
               backgroundColor: Color(0xFF3E6BA9), // Will work
               title: Row(
@@ -71,7 +76,7 @@ class Study_Result extends StatelessWidget {
 
         //desktop view
         desktop: MaterialApp(
-          title: 'Study Result',
+          title: 'Inquiries',
           localizationsDelegates: [
             GlobalMaterialLocalizations.delegate,
             GlobalWidgetsLocalizations.delegate,
@@ -105,9 +110,9 @@ class Study_Result extends StatelessWidget {
                   ),
                 ),
                 Flexible(
-                  flex: 7,
+                  flex: 8,
                   child: Container(
-                    child: study_result_class(),
+                    child: Inquiries_page_Class(),
                   ),
                 ),
               ],
@@ -127,7 +132,7 @@ class Study_Result extends StatelessWidget {
           ),
         ),
         tablet: MaterialApp(
-          title: 'Study Result',
+          title: 'Inquiries',
           localizationsDelegates: [
             GlobalMaterialLocalizations.delegate,
             GlobalWidgetsLocalizations.delegate,
@@ -163,7 +168,7 @@ class Study_Result extends StatelessWidget {
                 Flexible(
                   flex: 6,
                   child: Container(
-                    child: study_result_class(),
+                    child: Inquiries_page_Class(),
                   ),
                 )
               ],

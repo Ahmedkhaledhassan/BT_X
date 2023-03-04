@@ -6,7 +6,7 @@ import 'package:bt_x/Documents_Request/Documents_request_class.dart';
 import 'package:bt_x/Exams_table/Exams_table_class.dart';
 import 'package:bt_x/Study_result_page/study_result_class.dart';
 
-import 'package:bt_x/affairs_main_page/affairs_side_menue.dart';
+import 'package:bt_x/affairs_main_page/side_menue.dart';
 import 'package:bt_x/fees_page/fees_class.dart';
 import 'package:bt_x/responsive_page/responsive.dart';
 import 'package:easy_sidemenu/easy_sidemenu.dart';
@@ -39,6 +39,19 @@ class fess_page extends StatelessWidget {
           ],
           debugShowCheckedModeBanner: false,
           home: Scaffold(
+            bottomNavigationBar: Stack(fit: StackFit.passthrough, children: [
+              new Container(
+                height: 25,
+                color: Color(0xFF3E6BA9),
+                child: Center(
+                    child: Text(
+                        "جميع الحقوق محفوظة © طلاب جامعة بني سويف التكنولوجية",
+                        style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white))),
+              )
+            ]),
             body: Fees_page_class(),
             appBar: AppBar(
               backgroundColor: Color(0xFF3E6BA9), // Will work
@@ -74,6 +87,19 @@ class fess_page extends StatelessWidget {
           ],
           debugShowCheckedModeBanner: false,
           home: Scaffold(
+            bottomNavigationBar: Stack(fit: StackFit.passthrough, children: [
+              new Container(
+                height: 25,
+                color: Color(0xFF3E6BA9),
+                child: Center(
+                    child: Text(
+                        "جميع الحقوق محفوظة © طلاب جامعة بني سويف التكنولوجية",
+                        style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white))),
+              )
+            ]),
             body: Row(
               children: [
                 Flexible(
@@ -117,6 +143,19 @@ class fess_page extends StatelessWidget {
           ],
           debugShowCheckedModeBanner: false,
           home: Scaffold(
+            bottomNavigationBar: Stack(fit: StackFit.passthrough, children: [
+              new Container(
+                height: 25,
+                color: Color(0xFF3E6BA9),
+                child: Center(
+                    child: Text(
+                        "جميع الحقوق محفوظة © طلاب جامعة بني سويف التكنولوجية",
+                        style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white))),
+              )
+            ]),
             body: Row(
               children: [
                 Flexible(
