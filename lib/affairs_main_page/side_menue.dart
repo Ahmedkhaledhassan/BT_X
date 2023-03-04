@@ -63,7 +63,10 @@ class sidemenu extends StatelessWidget {
             SizedBox(
               child: Center(
                 child: Text("S/W development Trak",
-                    style: TextStyle(color: grey_text, fontSize: 15)),
+                    style: TextStyle(
+                        color: grey_text,
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold)),
               ),
             ),
             SizedBox(height: 20),

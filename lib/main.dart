@@ -9,9 +9,14 @@ import 'package:bt_x/Login&register/Register_responsive.dart';
 import 'package:bt_x/Login&register/register_class.dart';
 import 'package:bt_x/Study_result_page/study_result.dart';
 import 'package:bt_x/affairs_main_page/affairs_main.dart';
+import 'package:bt_x/contact_texts.dart';
+import 'package:bt_x/parents_texts.dart';
+import 'package:bt_x/personality_texts.dart';
 import 'package:bt_x/fees_page/fees_class.dart';
 import 'package:bt_x/fees_page/fees_page.dart';
 import 'package:bt_x/inquiries_page/affairs_Inquiries_page.dart';
+import 'package:bt_x/main_student_info/main_info_page.dart';
+import 'package:bt_x/main_student_info/personality.dart';
 import 'package:bt_x/qr.dart';
 import 'package:bt_x/scanner.dart';
 import 'package:bt_x/study_table/stydy_table.dart';
@@ -36,6 +41,6 @@ void main() {
     ],
     debugShowCheckedModeBanner: false,
     theme: ThemeData(),
-    home: QR(),
+    home: parents_texts(),
   ));
 }
