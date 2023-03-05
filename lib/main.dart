@@ -7,6 +7,10 @@ import 'package:bt_x/Login&register/LoginPage_class.dart';
 import 'package:bt_x/Login&register/Login_page_responsive.dart';
 import 'package:bt_x/Login&register/Register_responsive.dart';
 import 'package:bt_x/Login&register/register_class.dart';
+import 'package:bt_x/Students_attendance_table/Student_attendance_table_Mobile.dart';
+import 'package:bt_x/Students_attendance_table/Student_attendance_table_responsive.dart';
+import 'package:bt_x/Students_attendance_table/Students_attendance_tablet_Desk.dart';
+import 'package:bt_x/Students_attendance_table/students_attendance_table_class.dart';
 import 'package:bt_x/Study_result_page/study_result.dart';
 import 'package:bt_x/affairs_main_page/affairs_main.dart';
 import 'package:bt_x/contact_texts.dart';
@@ -18,7 +22,7 @@ import 'package:bt_x/inquiries_page/affairs_Inquiries_page.dart';
 import 'package:bt_x/main_student_info/main_info_page.dart';
 import 'package:bt_x/main_student_info/personality.dart';
 import 'package:bt_x/qr.dart';
-import 'package:bt_x/scanner.dart';
+
 import 'package:bt_x/study_table/stydy_table.dart';
 
 import 'package:flutter/material.dart';
@@ -41,6 +45,6 @@ void main() {
     ],
     debugShowCheckedModeBanner: false,
     theme: ThemeData(),
-    home: parents_texts(),
+    home: test(),
   ));
 }
