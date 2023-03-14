@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:bt_x/Documents_Request/Documents_request_class.dart';
+import 'dart:html';
 import 'package:bt_x/Documents_Request/Documents_request_page.dart';
 import 'package:bt_x/Exams_table/Exams_table.dart';
 import 'package:bt_x/Login&register/LoginPage_class.dart';
@@ -13,15 +14,10 @@ import 'package:bt_x/Students_attendance_table/Students_attendance_tablet_Desk.d
 import 'package:bt_x/Students_attendance_table/students_attendance_table_class.dart';
 import 'package:bt_x/Study_result_page/study_result.dart';
 import 'package:bt_x/affairs_main_page/affairs_main.dart';
-import 'package:bt_x/contact_texts.dart';
-import 'package:bt_x/parents_texts.dart';
-import 'package:bt_x/personality_texts.dart';
+
 import 'package:bt_x/fees_page/fees_class.dart';
 import 'package:bt_x/fees_page/fees_page.dart';
 import 'package:bt_x/inquiries_page/affairs_Inquiries_page.dart';
-import 'package:bt_x/main_student_info/main_info_page.dart';
-import 'package:bt_x/main_student_info/personality.dart';
-import 'package:bt_x/qr.dart';
 
 import 'package:bt_x/study_table/stydy_table.dart';
 
@@ -45,6 +41,6 @@ void main() {
     ],
     debugShowCheckedModeBanner: false,
     theme: ThemeData(),
-    home: test(),
+    home: Study_Result(),
   ));
 }
