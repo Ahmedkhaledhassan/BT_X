@@ -2,7 +2,6 @@
 
 import 'package:bt_x/constants/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import 'dart:html';
 

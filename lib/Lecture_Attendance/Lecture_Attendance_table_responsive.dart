@@ -2,11 +2,15 @@
 
 import 'dart:ui';
 
-import 'package:bt_x/Documents_Request/Documents_request_class.dart';
-import 'package:bt_x/Exams_table/Exams_table_class.dart';
-import 'package:bt_x/Study_result_page/study_result_class.dart';
-
+import 'package:bt_x/Lecture_Attendance/Lecture_Attendance_Desk_Tablet.dart';
+import 'package:bt_x/Lecture_Attendance/lecturers_attendance_schedule_screen.dart';
+import 'package:bt_x/Student_Academiv_result_affairs/student_academic_result_Desk_tablet.dart';
+import 'package:bt_x/Student_Academiv_result_affairs/students_academic_results.dart';
+import 'package:bt_x/Study_fees_affairs/Study_fees_Desk_tablet.dart';
+import 'package:bt_x/Study_fees_affairs/study_fees_screen.dart';
 import 'package:bt_x/affairs_main_page/side_menue.dart';
+import 'package:bt_x/lecture_info/lecturers_informations_screen.dart';
+
 import 'package:bt_x/responsive_page/responsive.dart';
 import 'package:easy_sidemenu/easy_sidemenu.dart';
 import 'package:flutter/material.dart';
@@ -15,18 +19,19 @@ import 'dart:html';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-class Exams_table_page extends StatelessWidget {
+class Lecture_attendance_responsive extends StatelessWidget {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
   PageController page = PageController();
+
   late final String title;
 
   @override
   Widget build(BuildContext context) {
-    Size _size = MediaQuery.of(context).size;
     return Scaffold(
       body: Responsive(
         mobile: MaterialApp(
-          title: 'Exams Table',
+          title: 'Student Result',
           localizationsDelegates: [
             GlobalMaterialLocalizations.delegate,
             GlobalWidgetsLocalizations.delegate,
@@ -51,7 +56,7 @@ class Exams_table_page extends StatelessWidget {
                             color: Colors.white))),
               )
             ]),
-            body: ExamsScheduleScreen(),
+            body: LecturersAttendanceScheduleScreen(),
             appBar: AppBar(
               backgroundColor: Color(0xFF3E6BA9), // Will work
               title: Row(
@@ -74,7 +79,7 @@ class Exams_table_page extends StatelessWidget {
 
         //desktop view
         desktop: MaterialApp(
-          title: 'Exams Table',
+          title: 'Study Fees',
           localizationsDelegates: [
             GlobalMaterialLocalizations.delegate,
             GlobalWidgetsLocalizations.delegate,
@@ -108,9 +113,9 @@ class Exams_table_page extends StatelessWidget {
                   ),
                 ),
                 Flexible(
-                  flex: 6,
+                  flex: 7,
                   child: Container(
-                    child: ExamsScheduleScreen(),
+                    child: LecturersAttendanceScheduleScreen_Desk_Tablet(),
                   ),
                 ),
               ],
@@ -130,7 +135,7 @@ class Exams_table_page extends StatelessWidget {
           ),
         ),
         tablet: MaterialApp(
-          title: 'Exams Table',
+          title: 'Study Result',
           localizationsDelegates: [
             GlobalMaterialLocalizations.delegate,
             GlobalWidgetsLocalizations.delegate,
@@ -158,7 +163,7 @@ class Exams_table_page extends StatelessWidget {
             body: Row(
               children: [
                 Flexible(
-                  flex: 2,
+                  flex: 3,
                   child: Container(
                     child: sidemenu(),
                   ),
@@ -166,7 +171,7 @@ class Exams_table_page extends StatelessWidget {
                 Flexible(
                   flex: 6,
                   child: Container(
-                    child: ExamsScheduleScreen(),
+                    child: LecturersAttendanceScheduleScreen_Desk_Tablet(),
                   ),
                 )
               ],

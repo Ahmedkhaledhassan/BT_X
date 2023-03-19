@@ -8,6 +8,7 @@ import 'package:bt_x/Study_result_page/study_result_class.dart';
 
 import 'package:bt_x/affairs_main_page/side_menue.dart';
 import 'package:bt_x/fees_page/fees_class.dart';
+import 'package:bt_x/fees_page/fees_page_Desk_Tablet.dart';
 import 'package:bt_x/responsive_page/responsive.dart';
 import 'package:easy_sidemenu/easy_sidemenu.dart';
 import 'package:flutter/material.dart';
@@ -52,7 +53,7 @@ class fess_page extends StatelessWidget {
                             color: Colors.white))),
               )
             ]),
-            body: Fees_page_class(),
+            body: StudyFees(),
             appBar: AppBar(
               backgroundColor: Color(0xFF3E6BA9), // Will work
               title: Row(
@@ -111,7 +112,7 @@ class fess_page extends StatelessWidget {
                 Flexible(
                   flex: 6,
                   child: Container(
-                    child: Fees_page_class(),
+                    child: StudyFees_Desk_Tablet(),
                   ),
                 ),
               ],
@@ -167,7 +168,7 @@ class fess_page extends StatelessWidget {
                 Flexible(
                   flex: 6,
                   child: Container(
-                    child: Fees_page_class(),
+                    child: StudyFees_Desk_Tablet(),
                   ),
                 )
               ],

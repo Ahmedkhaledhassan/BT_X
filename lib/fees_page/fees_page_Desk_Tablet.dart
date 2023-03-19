@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 
 import 'package:provider/provider.dart';
 
-class StudyFees extends StatelessWidget {
-  const StudyFees({super.key});
+class StudyFees_Desk_Tablet extends StatelessWidget {
+  const StudyFees_Desk_Tablet({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -33,8 +33,8 @@ class StudyFees extends StatelessWidget {
                 height: 20.0,
               ),
               Expanded(
-                child: RotatedBox(
-                  quarterTurns: 1,
+                child: Padding(
+                  padding: const EdgeInsets.only(right: 100, left: 100),
                   child: Container(
                     width: double.infinity,
                     height: double.infinity,
