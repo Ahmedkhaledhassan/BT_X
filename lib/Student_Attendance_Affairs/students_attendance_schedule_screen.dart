@@ -1,8 +1,7 @@
 import 'package:bt_x/core/app_colors.dart';
 import 'package:bt_x/presentation/provider/students_attendance_schedule_provider.dart';
-import 'package:bt_x/presentation/widgets/default_drop_down_button.dart';
+import 'package:bt_x/presentation/widgets/widgets/default_drop_down_button.dart';
 import 'package:flutter/material.dart';
-
 import 'package:provider/provider.dart';
 
 class StudentsAttendanceScheduleScreen extends StatelessWidget {
@@ -18,6 +17,7 @@ class StudentsAttendanceScheduleScreen extends StatelessWidget {
     List<String> departments = studentsAttendanceScheduleProvider.departments;
     String? division = studentsAttendanceScheduleProvider.division;
     List<String> divisions = studentsAttendanceScheduleProvider.divisions;
+    List<TableRow> tableRows = studentsAttendanceScheduleProvider.tableRows;
     return Directionality(
       textDirection: TextDirection.rtl,
       child: Scaffold(
@@ -136,207 +136,7 @@ class StudentsAttendanceScheduleScreen extends StatelessWidget {
                           color: AppColors.primary,
                           width: 2.0,
                         ),
-                        children: [
-                          TableRow(
-                            decoration: BoxDecoration(
-                              color: AppColors.primary,
-                            ),
-                            children: const [
-                              Text(
-                                "الكود",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                ),
-                              ),
-                              Text(
-                                "الاسم",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                ),
-                              ),
-                              FittedBox(
-                                child: Text(
-                                  "مادة 1 \n 1 2 3 4 5 6 7 8",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
-                              FittedBox(
-                                child: Text(
-                                  "مادة 2 \n 1 2 3 4 5 6 7 8",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
-                              FittedBox(
-                                child: Text(
-                                  "مادة 3 \n 1 2 3 4 5 6 7 8",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
-                              FittedBox(
-                                child: Text(
-                                  "مادة 4 \n 1 2 3 4 5 6 7 8",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
-                              FittedBox(
-                                child: Text(
-                                  "مادة 5 \n 1 2 3 4 5 6 7 8",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
-                              FittedBox(
-                                child: Text(
-                                  "مادة 6 \n 1 2 3 4 5 6 7 8",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                          TableRow(
-                            children: [
-                              Text(
-                                "45464",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  color: AppColors.grey,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              Text(
-                                "احمد خالد حسن ابوالليل",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  color: AppColors.grey,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              FittedBox(
-                                child: Row(
-                                  children: List<Icon>.generate(
-                                    8,
-                                    (index) => index.remainder(2) == 0
-                                        ? Icon(
-                                            Icons.check,
-                                            color: AppColors.grey,
-                                          )
-                                        : Icon(
-                                            Icons.cancel,
-                                            color: AppColors.grey,
-                                          ),
-                                  ),
-                                ),
-                              ),
-                              FittedBox(
-                                child: Row(
-                                  children: List<Icon>.generate(
-                                    8,
-                                    (index) => index.remainder(2) == 0
-                                        ? Icon(
-                                            Icons.check,
-                                            color: AppColors.grey,
-                                          )
-                                        : Icon(
-                                            Icons.cancel,
-                                            color: AppColors.grey,
-                                          ),
-                                  ),
-                                ),
-                              ),
-                              FittedBox(
-                                child: Row(
-                                  children: List<Icon>.generate(
-                                    8,
-                                    (index) => index.remainder(2) == 0
-                                        ? Icon(
-                                            Icons.check,
-                                            color: AppColors.grey,
-                                          )
-                                        : Icon(
-                                            Icons.cancel,
-                                            color: AppColors.grey,
-                                          ),
-                                  ),
-                                ),
-                              ),
-                              FittedBox(
-                                child: Row(
-                                  children: List<Icon>.generate(
-                                    8,
-                                    (index) => index.remainder(2) == 0
-                                        ? Icon(
-                                            Icons.check,
-                                            color: AppColors.grey,
-                                          )
-                                        : Icon(
-                                            Icons.cancel,
-                                            color: AppColors.grey,
-                                          ),
-                                  ),
-                                ),
-                              ),
-                              FittedBox(
-                                child: Row(
-                                  children: List<Icon>.generate(
-                                    8,
-                                    (index) => index.remainder(2) == 0
-                                        ? Icon(
-                                            Icons.check,
-                                            color: AppColors.grey,
-                                          )
-                                        : Icon(
-                                            Icons.cancel,
-                                            color: AppColors.grey,
-                                          ),
-                                  ),
-                                ),
-                              ),
-                              FittedBox(
-                                child: Row(
-                                  children: List<Icon>.generate(
-                                    8,
-                                    (index) => index.remainder(2) == 0
-                                        ? Icon(
-                                            Icons.check,
-                                            color: AppColors.grey,
-                                          )
-                                        : Icon(
-                                            Icons.cancel,
-                                            color: AppColors.grey,
-                                          ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
+                        children: tableRows,
                       ),
                     ),
                   ),

@@ -3,9 +3,13 @@ import 'package:flutter/material.dart';
 
 class DetailsTile extends StatelessWidget {
   const DetailsTile(
-      {super.key, required this.detailName, required this.detailValue});
+      {super.key,
+      required this.detailName,
+      required this.detailValue,
+      this.maxLines = 1});
   final String detailName;
   final String detailValue;
+  final int maxLines;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -32,6 +36,7 @@ class DetailsTile extends StatelessWidget {
             child: TextFormField(
               initialValue: detailValue,
               textAlign: TextAlign.center,
+              maxLines: maxLines,
               style: TextStyle(
                 fontSize: 16.0,
                 color: AppColors.primary,

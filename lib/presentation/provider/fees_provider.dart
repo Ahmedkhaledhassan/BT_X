@@ -101,54 +101,5 @@ class StudyFeesPro with ChangeNotifier {
         ),
       ],
     ),
-    TableRow(
-      children: [
-        Text(
-          "رقم",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: AppColors.primary,
-            fontSize: 16.0,
-          ),
-        ),
-        Text(
-          "رقم",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: AppColors.primary,
-            fontSize: 16.0,
-          ),
-        ),
-        Text(
-          "رقم",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: AppColors.primary,
-            fontSize: 16.0,
-          ),
-        ),
-        Text(
-          "رقم",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: AppColors.primary,
-            fontSize: 16.0,
-          ),
-        ),
-        Text(
-          "رقم",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: AppColors.primary,
-            fontSize: 16.0,
-          ),
-        ),
-      ],
-    ),
   ];
 }

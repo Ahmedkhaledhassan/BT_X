@@ -2,19 +2,24 @@
 
 import 'package:bt_x/Data_Screen/Data_screen_responsive.dart';
 import 'package:bt_x/Documents_Request/Documents_request_page.dart';
+import 'package:bt_x/Educational%20_Data/Educational_Data_Screen_Responsive.dart';
 import 'package:bt_x/Exams_table/Exams_table.dart';
 import 'package:bt_x/Lecture_Attendance/Lecture_Attendance_table_responsive.dart';
+import 'package:bt_x/Material_Schedual_Screen/Material_Schedual_Screen.dart';
 import 'package:bt_x/Student_Academiv_result_affairs/Student_Academic_Result_Responsive.dart';
 import 'package:bt_x/Student_Academiv_result_affairs/student_academic_result_Desk_tablet.dart';
 import 'package:bt_x/Student_Attendance_Affairs/Student_Attendance_responsive.dart';
 import 'package:bt_x/Student_Attendance_Affairs/students_attendance_schedule_screen.dart';
 import 'package:bt_x/Study_fees_affairs/Study_Fees_Responsive.dart';
+import 'package:bt_x/Teacher_Basic_Data/Teacher_Basic_Data.dart';
 import 'package:bt_x/affairs_main_page/affairs_main.dart';
 import 'package:bt_x/basic_info/Basic_info_responsive.dart';
 import 'package:bt_x/lecture_info/lecture_informationresponsive.dart';
+import 'package:bt_x/presentation/provider/Taecher_Basic_Data_provider.dart';
 import 'package:bt_x/presentation/provider/exam_schadule.dart';
 import 'package:bt_x/presentation/provider/fees_provider.dart';
 import 'package:bt_x/presentation/provider/lecture_schadule.dart';
+import 'package:bt_x/presentation/provider/material_Schedule_provider.dart';
 import 'package:bt_x/presentation/provider/study_fees_provider.dart';
 import 'package:bt_x/basic_info/basic_informations_screen.dart';
 
@@ -23,6 +28,7 @@ import 'package:bt_x/presentation/provider/lecturers_attendance_schedule_provide
 import 'package:bt_x/presentation/provider/lecturers_informations_provider.dart';
 import 'package:bt_x/presentation/provider/students_data_provider.dart';
 import 'package:bt_x/presentation/provider/year_result.dart';
+import 'package:bt_x/presentation/widgets/widgets/Educational_Data_provider.dart';
 import 'package:bt_x/study_table/stydy_table.dart';
 
 import 'package:flutter/material.dart';
@@ -81,6 +87,15 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider<YearResultProvider>(
           create: (_) => YearResultProvider(),
         ),
+        ChangeNotifierProvider<MaterialsScheduleProvider>(
+          create: (_) => MaterialsScheduleProvider(),
+        ),
+        ChangeNotifierProvider<EducationalDataProvider>(
+          create: (_) => EducationalDataProvider(),
+        ),
+        ChangeNotifierProvider<BasicDataProvider>(
+          create: (_) => BasicDataProvider(),
+        ),
       ],
       child: MaterialApp(
         localizationsDelegates: [
@@ -93,7 +108,7 @@ class MyApp extends StatelessWidget {
           Locale('ar'),
         ],
         debugShowCheckedModeBanner: false,
-        home: Exams_table_page(),
+        home: student_Attendance_responsive(),
       ),
     );
   }

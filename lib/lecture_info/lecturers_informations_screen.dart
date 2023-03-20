@@ -1,11 +1,17 @@
 import 'package:bt_x/core/app_colors.dart';
+import 'package:bt_x/presentation/provider/lecturers_informations_provider.dart';
 import 'package:flutter/material.dart';
+
+import 'package:provider/provider.dart';
 
 class LecturersInformationsScreen extends StatelessWidget {
   const LecturersInformationsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final lecturersInformationsProvider =
+        Provider.of<LecturersInformationsProvider>(context);
+    List<TableRow> tableRows = lecturersInformationsProvider.tableRows;
     return Directionality(
       textDirection: TextDirection.rtl,
       child: Scaffold(
@@ -46,143 +52,7 @@ class LecturersInformationsScreen extends StatelessWidget {
                         color: AppColors.primary,
                         width: 2.0,
                       ),
-                      children: [
-                        TableRow(
-                          decoration: BoxDecoration(
-                            color: AppColors.primary,
-                          ),
-                          children: const [
-                            Text(
-                              "الكود",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            Text(
-                              "الاسم",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            Text(
-                              "المادة",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            Text(
-                              "الفرقة",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            Text(
-                              "التليفون",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ],
-                        ),
-                        TableRow(
-                          children: [
-                            Text(
-                              "45464",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                color: AppColors.grey,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            FittedBox(
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(horizontal: 5.0),
-                                child: Text(
-                                  "أحمد محمود",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: AppColors.grey,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Column(
-                              children: [
-                                Text(
-                                  "المادة",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: AppColors.grey,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                Divider(
-                                  color: AppColors.primary,
-                                  thickness: 2.0,
-                                ),
-                                Text(
-                                  "المادة",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: AppColors.grey,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Column(
-                              children: [
-                                Text(
-                                  "الفرقة",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: AppColors.grey,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                Divider(
-                                  color: AppColors.primary,
-                                  thickness: 2.0,
-                                ),
-                                Text(
-                                  "الفرقة",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: AppColors.grey,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            FittedBox(
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(horizontal: 5.0),
-                                child: Text(
-                                  "01234567891",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: AppColors.grey,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
+                      children: tableRows,
                     ),
                   ),
                 ),

@@ -98,7 +98,7 @@ class LecturesScheduleProvider with ChangeNotifier {
     TableRow(
       children: [
         SizedBox(
-          height: 90.0,
+          height: 60.0,
           child: Center(
             child: Text(
               "السبت",
@@ -116,16 +116,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
-            color: AppColors.primary,
-          ),
-        ),
-        Text(
-          "mobile programming",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -134,7 +124,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -143,7 +132,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -152,7 +140,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -161,7 +148,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -170,7 +156,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -179,7 +164,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -188,7 +172,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -197,7 +180,14 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
+            color: AppColors.primary,
+          ),
+        ),
+        Text(
+          "",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
             color: AppColors.primary,
           ),
         ),
@@ -206,7 +196,7 @@ class LecturesScheduleProvider with ChangeNotifier {
     TableRow(
       children: [
         SizedBox(
-          height: 90.0,
+          height: 60.0,
           child: Center(
             child: Text(
               "الأحد",
@@ -224,7 +214,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -233,7 +222,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -242,7 +230,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -251,7 +238,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -260,7 +246,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -269,7 +254,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -278,7 +262,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -287,7 +270,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -296,7 +278,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -305,7 +286,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -314,7 +294,7 @@ class LecturesScheduleProvider with ChangeNotifier {
     TableRow(
       children: [
         SizedBox(
-          height: 90.0,
+          height: 60.0,
           child: Center(
             child: Text(
               "الإثنين",
@@ -332,7 +312,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -340,52 +319,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           "",
           textAlign: TextAlign.center,
           style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 11,
-            color: AppColors.primary,
-          ),
-        ),
-        Text(
-          "",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 11,
-            color: AppColors.primary,
-          ),
-        ),
-        Text(
-          "",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 11,
-            color: AppColors.primary,
-          ),
-        ),
-        Text(
-          "",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 11,
-            color: AppColors.primary,
-          ),
-        ),
-        Text(
-          "",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 11,
-            color: AppColors.primary,
-          ),
-        ),
-        Text(
-          "",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 11,
             fontWeight: FontWeight.bold,
             color: AppColors.primary,
           ),
@@ -395,7 +328,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -404,7 +336,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -413,7 +344,46 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
+            color: AppColors.primary,
+          ),
+        ),
+        Text(
+          "",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: AppColors.primary,
+          ),
+        ),
+        Text(
+          "",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: AppColors.primary,
+          ),
+        ),
+        Text(
+          "",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: AppColors.primary,
+          ),
+        ),
+        Text(
+          "",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: AppColors.primary,
+          ),
+        ),
+        Text(
+          "",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
             color: AppColors.primary,
           ),
         ),
@@ -422,7 +392,7 @@ class LecturesScheduleProvider with ChangeNotifier {
     TableRow(
       children: [
         SizedBox(
-          height: 90.0,
+          height: 60.0,
           child: Center(
             child: Text(
               "الأربعاء",
@@ -440,7 +410,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -448,52 +417,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           "",
           textAlign: TextAlign.center,
           style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 11,
-            color: AppColors.primary,
-          ),
-        ),
-        Text(
-          "",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 11,
-            color: AppColors.primary,
-          ),
-        ),
-        Text(
-          "",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 11,
-            color: AppColors.primary,
-          ),
-        ),
-        Text(
-          "",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 11,
-            color: AppColors.primary,
-          ),
-        ),
-        Text(
-          "",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 11,
-            color: AppColors.primary,
-          ),
-        ),
-        Text(
-          "",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 11,
             fontWeight: FontWeight.bold,
             color: AppColors.primary,
           ),
@@ -503,7 +426,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -512,7 +434,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -521,7 +442,46 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
+            color: AppColors.primary,
+          ),
+        ),
+        Text(
+          "",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: AppColors.primary,
+          ),
+        ),
+        Text(
+          "",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: AppColors.primary,
+          ),
+        ),
+        Text(
+          "",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: AppColors.primary,
+          ),
+        ),
+        Text(
+          "",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: AppColors.primary,
+          ),
+        ),
+        Text(
+          "",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
             color: AppColors.primary,
           ),
         ),
@@ -530,7 +490,7 @@ class LecturesScheduleProvider with ChangeNotifier {
     TableRow(
       children: [
         SizedBox(
-          height: 90.0,
+          height: 60.0,
           child: Center(
             child: Text(
               "الخميس",
@@ -548,7 +508,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -556,43 +515,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           "",
           textAlign: TextAlign.center,
           style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 11,
-            color: AppColors.primary,
-          ),
-        ),
-        Text(
-          "",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 11,
-            color: AppColors.primary,
-          ),
-        ),
-        Text(
-          "",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 11,
-            color: AppColors.primary,
-          ),
-        ),
-        Text(
-          "",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 11,
-            color: AppColors.primary,
-          ),
-        ),
-        Text(
-          "",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 11,
             fontWeight: FontWeight.bold,
             color: AppColors.primary,
           ),
@@ -602,7 +524,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -611,7 +532,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -620,7 +540,6 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
             color: AppColors.primary,
           ),
         ),
@@ -629,7 +548,38 @@ class LecturesScheduleProvider with ChangeNotifier {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 11,
+            color: AppColors.primary,
+          ),
+        ),
+        Text(
+          "",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: AppColors.primary,
+          ),
+        ),
+        Text(
+          "",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: AppColors.primary,
+          ),
+        ),
+        Text(
+          "",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: AppColors.primary,
+          ),
+        ),
+        Text(
+          "",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
             color: AppColors.primary,
           ),
         ),

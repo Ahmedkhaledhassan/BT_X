@@ -1,4 +1,4 @@
-import 'package:bt_x/core/details_tile.dart';
+import 'package:bt_x/presentation/widgets/widgets/details_tile.dart';
 import 'package:flutter/material.dart';
 
 class PreviousQualification extends StatelessWidget {

@@ -72,7 +72,7 @@ class ExamsScheduleProvider with ChangeNotifier {
           ),
         ),
         Text(
-          "mobile \n programming",
+          "المادة",
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,

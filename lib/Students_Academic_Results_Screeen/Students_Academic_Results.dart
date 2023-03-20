@@ -1,23 +1,24 @@
 import 'package:bt_x/core/app_colors.dart';
-import 'package:bt_x/presentation/provider/study_fees_provider.dart';
+import 'package:bt_x/presentation/provider/students_academic_results_provider.dart';
 import 'package:bt_x/presentation/widgets/widgets/default_drop_down_button.dart';
 import 'package:flutter/material.dart';
 
 import 'package:provider/provider.dart';
 
-class StudyFeesScreen extends StatelessWidget {
-  const StudyFeesScreen({super.key});
+class StudentsAcademicResultsScreen extends StatelessWidget {
+  const StudentsAcademicResultsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final studyFeesProvider = Provider.of<StudyFeesProvider>(context);
-    String? level = studyFeesProvider.level;
-    List<String> levels = studyFeesProvider.levels;
-    String? department = studyFeesProvider.department;
-    List<String> departments = studyFeesProvider.departments;
-    String? division = studyFeesProvider.division;
-    List<String> divisions = studyFeesProvider.divisions;
-    List<TableRow> tableRows = studyFeesProvider.tableRows;
+    final studentsAcademicResultsProvider =
+        Provider.of<StudentsAcademicResultsProvider>(context);
+    String? level = studentsAcademicResultsProvider.level;
+    List<String> levels = studentsAcademicResultsProvider.levels;
+    String? department = studentsAcademicResultsProvider.department;
+    List<String> departments = studentsAcademicResultsProvider.departments;
+    String? division = studentsAcademicResultsProvider.division;
+    List<String> divisions = studentsAcademicResultsProvider.divisions;
+    List<TableRow> tableRows = studentsAcademicResultsProvider.tableRows;
     return Directionality(
       textDirection: TextDirection.rtl,
       child: Scaffold(
@@ -29,7 +30,7 @@ class StudyFeesScreen extends StatelessWidget {
           child: Column(
             children: [
               Text(
-                "الرسوم الدراسية",
+                "النتائج الدراسية للطلبة",
                 style: TextStyle(
                   color: Colors.grey[900],
                   fontWeight: FontWeight.bold,
@@ -57,7 +58,8 @@ class StudyFeesScreen extends StatelessWidget {
                       list: levels,
                       value: level,
                       onChanged: (value) {
-                        studyFeesProvider.changeLevel(selectedLevel: value);
+                        studentsAcademicResultsProvider.changeLevel(
+                            selectedLevel: value);
                       },
                     ),
                   ),
@@ -80,7 +82,7 @@ class StudyFeesScreen extends StatelessWidget {
                       list: departments,
                       value: department,
                       onChanged: (value) {
-                        studyFeesProvider.changeDepartment(
+                        studentsAcademicResultsProvider.changeDepartment(
                             selectedDepartment: value);
                       },
                     ),
@@ -104,7 +106,7 @@ class StudyFeesScreen extends StatelessWidget {
                       list: divisions,
                       value: division,
                       onChanged: (value) {
-                        studyFeesProvider.changeDivision(
+                        studentsAcademicResultsProvider.changeDivision(
                             selectedDivision: value);
                       },
                     ),
@@ -138,17 +140,6 @@ class StudyFeesScreen extends StatelessWidget {
                         children: tableRows,
                       ),
                     ),
-                  ),
-                ),
-              ),
-              TextButton(
-                onPressed: () {},
-                child: const Text(
-                  "إضافة وصل",
-                  style: TextStyle(
-                    color: Colors.red,
-                    fontSize: 18.0,
-                    decoration: TextDecoration.underline,
                   ),
                 ),
               ),

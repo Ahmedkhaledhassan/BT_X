@@ -1,9 +1,9 @@
 import 'package:bt_x/core/app_colors.dart';
-import 'package:bt_x/core/contacts_details.dart';
-import 'package:bt_x/core/master_details.dart';
-import 'package:bt_x/core/personal_details.dart';
-import 'package:bt_x/core/previous_qualification.dart';
 import 'package:bt_x/presentation/provider/basic_informations_provider.dart';
+import 'package:bt_x/presentation/widgets/widgets/contacts_details.dart';
+import 'package:bt_x/presentation/widgets/widgets/master_details.dart';
+import 'package:bt_x/presentation/widgets/widgets/personal_details.dart';
+import 'package:bt_x/presentation/widgets/widgets/previous_qualification.dart';
 import 'package:flutter/material.dart';
 
 import 'package:provider/provider.dart';
@@ -158,8 +158,8 @@ class BasicInformationsScreen extends StatelessWidget {
                       Expanded(
                         child: basicInformationsIndex == 0
                             ? const PersonalDetails(
-                                name: "أحمد خالد",
-                                englishName: "Ahmed khaled",
+                                name: "أحمد محمود",
+                                englishName: "Ahmed Mahmoud",
                                 code: "365",
                                 religion: "مسلم",
                                 gender: "ذكر",
@@ -168,10 +168,10 @@ class BasicInformationsScreen extends StatelessWidget {
                                 birthPlace: "بنها",
                                 socialStatus: "أعزب",
                                 cardType: "بطاقة قومية",
-                                cardNumber: "1234567910112",
+                                cardNumber: "12345678910112",
                                 publishDate: "",
-                                publishPlace: "ني سويفب",
-                                fatherName: "خالد حسن",
+                                publishPlace: "بنها",
+                                fatherName: "محمود حسن",
                                 motherName: "",
                                 entryStatus: "مستجد تقدير",
                                 acceptanceType: "محول",
